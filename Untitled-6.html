@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Trobe University - Contact Us</title>
+    <link rel="stylesheet" href="Untitled-6.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('1234.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            padding: 10px 0;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 80px auto 20px; /* Add margin-top to account for the fixed navbar */
+        }
+
+        .topic, .contact-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        .topic h1, .contact-form h2 {
+            margin: 0;
+            color: #333;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .topic p, .contact-form label {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea,
+        .contact-form select {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Topic Section -->
+        <div class="topic" id="home">
+            <h1><b>La Trobe University Australia</b></h1>
+            <p>La Trobe University proudly acknowledges the traditional custodians of the lands where its campuses are located in Victoria. 
+               We recognise that Indigenous Australians have an ongoing connection to the land and the University values their unique contribution to both the University and the wider Australian society.</p>
+            <p>Founded in 1967, La Trobe University is a leading Australian university known for its commitment to research and teaching excellence. 
+               The University offers a broad range of undergraduate and postgraduate programs across various disciplines, and it is dedicated to providing a supportive and innovative learning environment.</p>
+            <p>Our campuses are strategically located across Victoria, including in Melbourne, Bendigo, and Albury-Wodonga, allowing us to offer a diverse range of experiences and opportunities for students from various regions.</p>
+            <p>We invite you to explore our programs, research opportunities, and the vibrant campus life that makes La Trobe University a unique place to learn and grow.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form" id="contact">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="admissions">Admissions</option>
+                    <option value="courses">Courses</option>
+                    <option value="campus">Campus Life</option>
+                    <option value="financial">Financial Aid</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Information Table -->
+        <div id="services">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>30</td>
+                        <td>Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>25</td>
+                        <td>Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>35</td>
+                        <td>Teacher</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 La Trobe University. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

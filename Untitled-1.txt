@@ -1,0 +1,12 @@
+<script>
+var score=150;
+if(score>=200){
+document.write("Good");
+}else if(score>=150){
+document.write("Aveage");
+}else if(score>=100){
+document.write("Bad");
+}else{
+document.write("Worst");
+}
+</script>
